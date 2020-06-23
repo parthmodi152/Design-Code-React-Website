@@ -1,0 +1,64 @@
+.SectionGroup {
+    background: url('../images/wallpaper2.jpg');
+    height: 720px;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 300px auto;
+    grid-gap: 20px;
+    position: relative;
+}
+
+.SectionLogo {
+    align-self: end;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.SectionTitleGroup {
+    display: grid;
+    grid-template-columns: 300px auto;
+    margin: 0 40px;
+    grid-gap: 20px;
+    grid-template-rows: auto 100%;
+}
+
+.SectionTitle {
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.SectionText {
+    color: white;
+}
+.WaveTop{
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    transform: rotate(180deg);
+}
+
+.WaveBottom {
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+}
+
+@media (max-width:720px) {
+    .SectionTitleGroup {
+        grid-template-columns: 1fr;
+    }
+
+    .SectionTitle {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width:640px) {
+    .SectionGroup{
+        height: 820px;
+    }
+}
